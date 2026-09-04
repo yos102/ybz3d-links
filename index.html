@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- צובע את שורת הכתובת בדפדפן (באנדרואיד) לצבע הרקע של האתר -->
+    <meta name="theme-color" content="#f4f7f6">
     <title>YBZ3D - עיצוב והדפסה בתלת-מימד</title>
     
     <!-- ייבוא פונט עברי מודרני מגוגל -->
@@ -22,7 +24,7 @@
 
         body {
             font-family: 'Rubik', sans-serif;
-            background-color: #f4f7f6; /* רקע בהיר ונקי */
+            background-color: #f4f7f6;
             color: #333333;
             display: flex;
             justify-content: center;
@@ -34,7 +36,7 @@
         .container {
             background-color: #ffffff;
             width: 100%;
-            max-width: 400px; /* מותאם במיוחד למסכי סמארטפון */
+            max-width: 400px;
             border-radius: 24px;
             padding: 40px 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -87,12 +89,20 @@
 
         .btn i {
             font-size: 24px;
-            margin-left: 12px; /* ריווח משמאל לאייקון בגלל RTL */
+            margin-left: 12px;
         }
 
-        /* כפתור תשלום (Bit / PayBox) */
+        /* תמונת הלוגו של ביט */
+        .bit-icon {
+            width: 28px;
+            height: 28px;
+            margin-left: 12px;
+            border-radius: 6px;
+        }
+
+        /* כפתור תשלום (ביט) */
         .btn-pay {
-            background-color: #00b0f0; /* כחול בולט שמתאים לאפליקציות תשלום */
+            background-color: #008ebf; /* כחול שמשתלב יפה עם הלוגו */
         }
 
         /* כפתור אינסטגרם */
@@ -105,11 +115,6 @@
             background-color: #25D366;
         }
 
-        /* כפתור גלריה / אתר (אופציונלי להוספה עתידית) */
-        .btn-website {
-            background-color: #333333;
-        }
-
         .footer {
             margin-top: 30px;
             font-size: 14px;
@@ -120,29 +125,27 @@
 <body>
 
     <div class="container">
-        <!-- כותרת ותיאור -->
         <div class="header-section">
             <h1 class="brand-name">YBZ3D</h1>
             <p class="brand-description">עיצוב והדפסה בתלת-מימד</p>
         </div>
 
-        <!-- כפתורי פעולה -->
         <div class="buttons-container">
             
-            <!-- החלף את '#' בקישור הרלוונטי לתשלום או במספר טלפון לביט -->
-            <a href="https://www.bitpay.co.il/app/me/68A81515-7238-DDB0-9512-9B81C2990C7EA83F" class="btn btn-pay">
-                <i class="fa-solid fa-shekel-sign"></i>
-                לתשלום מהיר (Bit)
+            <!-- החלף את '#' בקישור הרלוונטי לתשלום בביט -->
+            <a href="#" class="btn btn-pay">
+                <img src="images-Photoroom.png" alt="Bit" class="bit-icon">
+                לתשלום בביט
             </a>
 
             <!-- החלף את '#' בקישור לפרופיל האינסטגרם שלך -->
-            <a href="https://www.instagram.com/yossibenzimra?igsi=MXh1ZzRvbWMxenM3aw==" class="btn btn-instagram">
+            <a href="#" class="btn btn-instagram">
                 <i class="fa-brands fa-instagram"></i>
                 לעמוד האינסטגרם שלנו
             </a>
 
             <!-- החלף את המספר בקישור הווצאפ שלך (כולל קידומת 972 ללא הפלוס) -->
-            <a href="https://wa.me/972545454442" class="btn btn-whatsapp" target="_blank">
+            <a href="https://wa.me/972500000000" class="btn btn-whatsapp" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
                 להזמנות אישיות בוואטסאפ
             </a>
